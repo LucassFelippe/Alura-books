@@ -58,26 +58,35 @@
 
     <!-- Slider main container -->
 <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+  <!-- Additional required wrapper -->
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="imagem/Nodejs.svg" alt=""></div>
+    <div class="swiper-slide"><img src="imagem/Portugol.svg" alt=""></div>
+    <div class="swiper-slide"><img src="imagem/Tuning.svg" alt=""></div>
+    <div class="swiper-slide"><img src="imagem/Javascript.svg" alt=""></div>
   </div>
+  <!-- If we need pagination -->
   
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+             spaceBetween: 10,
+             slidesPerView: 3,
+             pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+             },
+        });
+    </script>
 </body>
 </html>

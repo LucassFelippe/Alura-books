@@ -25,6 +25,8 @@ hr {
         display: flex;
         align-items: center;
         margin: 0.6em 0;
+        border-left: 2px solid lightgray;
+        padding: 1em;
     }
 
     .lista-rodapé__link {
@@ -40,15 +42,5 @@ hr {
 
     .rodapé__titulo {
         font-size: 24px;
-    }
-}
-
-@media screen and ( min-width: 1728px){
-    .lista-rodapé{
-        border-left: 1px solid lightgray;
-        padding-left: 1em;
-    }
-    .rodapé{
-        padding: 3em 0;
     }
 }
